@@ -1,0 +1,186 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+    </head>
+    <body>
+        <a class="toggle-button" onclick="myFunction()">
+            <span class= "bar"></span>
+            <span class= "bar"></span>
+            <span class= "bar"></span>
+        </a>
+        <div class="navbar" id="myTopnav">
+            
+            <div class="navbar-div1">                    
+                <img src="{% static 'images/myImage.jpg'%}" style="margin-left: 30%;">
+                <h1 style="font-size: 25px; color: aliceblue; margin-left: 10%;"> Khurshidjon Sharopov</h1>
+
+                <div class="sm_icons" style="margin-left: 15%; display: flex; flex-direction: row;">
+                    <h1>
+                        <a href="https://www.facebook.com/jhon.morge.1/"><i class="bi bi-facebook"></i></a>
+                        <a href="https://t.me/greenstep1"><i class="bi bi-telegram"></i></a>
+                        <a href="https://www.linkedin.com/in/khurshidjon-sharopov-141280202/"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/Khurshid97"><i class="bi bi-github"></i></a>
+                        <a href="https://github.com/Khurshid97"><i class="bi bi-instagram"></i></a>    
+                    </h1> 
+                </div>
+                    <ul class="nav_links ">
+                        <li style="padding: 5px;"><i class="bi bi-house-door" ></i> <a style="color: aliceblue; text-decoration: none;" href="#home"> Home</a></li>
+                        <li style="padding: 5px;"><i class="bi bi-file-person"></i> <a style="color: aliceblue; text-decoration: none;" href="#about"> About</a></li>
+                        <li style="padding: 5px;"><i class="bi bi-file"></i> <a style="color: aliceblue; text-decoration: none;" href="#skills">Skills</a></li>
+                        <li style="padding: 5px;"><i class="bi bi-file-plus-fill"></i> <a style="color: aliceblue; text-decoration: none;" href="#portfolio">Portfolio</a></li>
+                        <li style="padding: 5px;"><i class="bi bi-hdd-rack"></i> <a style="color: aliceblue; text-decoration: none;" href="#contact">Contact</a></li>         
+                    </ul>
+                                                       
+            </div>
+
+        </div>
+        <div class="section"> 
+
+            <div class="home" id="home">
+                <img src="{% static 'images/secondmyImage.jpg'%}" alt="">
+                <p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: rgb(8, 8, 8);">
+                    <strong>Khurshidjon Sharopov</strong>
+                    <br> My portfolio</p>
+            </div>
+
+            <div class="about_info" id="about">
+                <img src="{% static 'images/about.jpg'%}" alt="">
+                <h1 style="font-size: 37.5px; color: rgb(23, 23, 57); "><strong>Web Developer</strong> </h1>
+                <p style="font-size: 25px;"> Everything is done by me is just Awesome!</p>
+
+                    <div id="info">
+                        <table>
+                            <tr>
+                              <td><strong>Birthday:</strong>  29 August 1997</td>
+                              <td><strong>Website:</strong>  www.example.com</td>
+                            </tr>
+                            <tr>
+                              <td><strong>Phone:</strong> +393519249051</td>
+                              <td><strong>City:</strong> Turin</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Age:</strong>  25</td>
+                                <td><strong>Email:</strong> fantasticidea3000@gmail.com</td>
+                            </tr>
+                        </table>
+                    </div>                    
+            </div>
+
+            
+            <div class="skills" id="skills">
+                <div class="skill_heading">
+                    <h1 style="color: rgb(1, 18, 13);">Skills</h1>
+                    <p style="color: rgb(0, 17, 11);">
+                        These skills are depend on the requirement, 
+                        because nobody can be perfect in anything, espessially in our
+                        developing world
+                    </p>
+                </div>
+
+                <div class="flex-container">
+                    <div class="html_rectangle">
+                        <div style="background-color: rgb(255, 127, 127); width: 100%; height: 20px; text-align: left;">HTML 100%</div>
+                    </div>    
+                    
+                    <div class="css_rectangle">
+                        <div style="background-color: rgb(255, 127, 127); width: 70%; height: 20px; text-align: left;">CSS 70%</div>
+                    </div>
+
+                    <div class="js_rectangle">
+                        <div style="background-color: rgb(255, 127, 127); width: 40%; height: 20px; text-align: left;">JS 40%</div>
+                    </div>
+
+                    <div class="python_rectangle">
+                        <div style="background-color: rgb(255, 127, 127); width: 40%; height: 20px; text-align: left;">Python_40%</div>
+                    </div>
+
+                    <div class="django_rectangle">
+                        <div style="background-color: rgb(255, 127, 127); width: 40%; height: 20px; text-align: left;">Django_40%</div>
+                    </div>
+
+                    <div class="github_rectangle">
+                        <div style="background-color: rgb(255, 127, 127); width: 40%; height: 20px; text-align: left;">GitHub_40%</div>
+                    </div>
+                </div>        
+
+            </div>
+
+
+            <div class="portfolio_page" id="portfolio">
+                <h1 style="margin-left: 5%; font-size: 35px; color: antiquewhite;">Portfolio</h1>
+                <p style="margin-left: 5%; font-size: 22px; color: antiquewhite;">
+                    There are some examples of my work, 
+                    if you give me a chance I could grow fast. 
+                    So let's connect with me, than you can find something
+                    interesting
+                </p>
+
+                <div id="myBtnContainer">
+                        <li class="btn active" onclick="filterSelection('all')">All</li> 
+                        <li class="btn" onclick="filterSelection('frontend')">Frontend</li>
+                        <li class="btn" onclick="filterSelection('games')">Games</li>
+                        <li class="btn" onclick="filterSelection('ideas')">Ideas</li>    
+                </div>
+
+                <div class="row">
+                    <div class="column frontend">
+                        <div class="content">
+                          <img src="{% static 'images/about.jpg'%}" alt="about" style="width:100%; object-fit: cover;">
+                          <h4>Frontend</h4>
+                          <p>Frontend ipsum dolor..</p>
+                        </div>
+                    </div>
+                    <div class="column ideas">
+                        <div class="content">
+                          <img src="{% static 'images/myImage.jpg'%}" alt="myImage" style="width:100%; object-fit: cover;">
+                          <h4>Ideas</h4>
+                          <p>Ideas ipsum dolor..</p>
+                        </div>
+                    </div>
+                    <div class="column ideas">
+                        <div class="content">
+                          <img src="{% static 'images/secondmyImage.jpg'%}" alt="secondmyImage" style="width:100%; object-fit: cover;">
+                          <h4>Ideas</h4>
+                          <p>Ideas ipsum dolor..</p>
+                        </div>
+                    </div>
+                    <div class="column games">
+                        <div class="content">
+                          <img src="{% static 'images/secondmyImage.jpg'%}" alt="secondmyImage" style="width:100%; object-fit: cover;">
+                          <h4>Games</h4>
+                          <p>Games ipsum dolor..</p>
+                        </div>
+                    </div>
+                    <div class="column games">
+                        <div class="content">
+                          <img src="{% static 'images/secondmyImage.jpg'%}" alt="secondmyImage" style="width:100%; object-fit: cover;">
+                          <h4>Games</h4>
+                          <p>Games ipsum dolor..</p>
+                        </div>
+                    </div>
+                    <div class="column games">
+                        <div class="content">
+                          <img src="{% static 'images/secondmyImage.jpg'%}" alt="secondmyImage" style="width:100%; object-fit: cover;">
+                          <h4>Games</h4>
+                          <p>Games ipsum dolor..</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <footer id="contact">
+                It is all about me!
+            </footer>
+
+
+        </div>
+        <script src="{% static 'js/interactive.js' %}">
+
+        </script>
+    </body>
+</html>
