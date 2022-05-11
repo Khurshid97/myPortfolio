@@ -17,7 +17,6 @@ function filterSelection(c) {
   // the for loop, we are entering the gallery 'column' class
   for (i = 0; i < x.length; i++) {
     RemoveClass(x[i], "show");
-    console.log(x[i].className.indexOf(c))
     if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
   }
 }
@@ -54,3 +53,12 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+//Google Analytics
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('send', 'pageview');
